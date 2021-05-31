@@ -3046,13 +3046,9 @@ void participant()
 	//fonction participant qui permet d'affichier ceux qui on concu le projet
 	gotoxy(32,3);printf("PROGRAMMEUR");
 	SetColor(15);
-	gotoxy(10,4);printf("NOM :TOMDIEU TCHADIEUKO IVAN GOTTFRIED ");SetColor(10);printf("**");SetColor(15);
-	gotoxy(10,6);printf("MATRICULE : 20U2947");
+	gotoxy(10,4);printf("NOM :TOMDIEU IVAN");SetColor(10);printf("**");SetColor(15);
+	gotoxy(10,6);printf("MATRICULE : XXXXXXX");
 	gotoxy(10,8);printf("NIVEAU : L1");
-	gotoxy(10,10);printf("NOM : TCHOUAGOUENG MBOGNING GAETAN");
-	gotoxy(10,12);printf("MATRICULE : 20U2868");
-	gotoxy(10,14);printf("NIVEAU : L1");
-
 	getch();
 }
 

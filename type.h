@@ -19,20 +19,27 @@ char *type_of(char *value)
 {
 	double temp;
 	int n;
-	char str[N]="";
+	char str[N]="",s[N]="";
 	double val=1e-12;//0.0000000000001
-	if(sscanf(value,"%lf",&temp)==1)
+	if(sscanf(value,"%lf%s",&temp,s))
 	{
-		n=(int)temp;
-		/*here , using BODMAS ;
-		we can see that the integer part of temp is first divided by temp before removing temm from it */
-		if(fabs(temp-n)/temp>val)
+		if(strcmp(s,"")==0)
 		{
-			return (char*)"float";
+			n=(int)temp;
+			/*here , using BODMAS ;
+			we can see that the integer part of temp is first divided by temp before removing temm from it */
+			if(fabs(temp-n)/temp>val)
+			{
+				return (char*)"float";
+			}
+			else
+			{
+				return (char*)"int";
+			}
 		}
 		else
 		{
-			return (char*)"int";
+			return (char*)"string";
 		}
 	}
 	//here , if asssigning value to string is successfull it returns 1 but here all data types can be contain in a string

@@ -14,7 +14,7 @@ int main()
 	decor();
 	clrscr();
 	acceuill();
-	SetConsoleTitle("TP 1031 DE Dr Tsopze");
+	SetConsoleTitle("My Program");
 	/*cette fontion permet de donner un nom a la console
 	* de facon a ce que meme si quelle qu'un nomme lefichier hors du programme le
 	* nom de mon projet restera <TP 1031 DE Dr Tsopze>
